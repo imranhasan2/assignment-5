@@ -2,38 +2,100 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page ticket</title>
-    <!-- daisy ui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page ticket</title>
+  <!-- daisy ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;0,800;1,100&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-   <!-- header nav start-->
-  <header class=" max-w-6xl mx-auto">
+  <!-- header nav start-->
+  <header class=" max-w-6xl mx-auto mb-4">
     <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <a class="  text-2xl font-extrabold text-[#030712]">P-Ticket</a>
-        </div>
-       
-        <div class="navbar-end">
-          <a class="btn text-[#1DD100]">Bus<span><img src="images/bus-icon.png" alt=""></span></a>
-        </div>
+      <div class="navbar-start">
+        <a class="  text-2xl font-extrabold text-[#030712]">P-Ticket</a>
       </div>
+
+      <div class="navbar-end">
+        <a class="btn text-[#1DD100]">Bus<span><img src="images/bus-icon.png" alt=""></span></a>
+      </div>
+    </div>
   </header>
   <!-- header end -->
 
   <!-- main section -->
-  <main class=" max-w-6xl">
-<section>
-    <!-- bus section scroll -->
+  <main class="max-w-6xl mx-auto">
+    <!-- image section -->
+    <section class="mb-4 min-h-screen bg-[url(images/banner.png)] bg-no-repeat bg-cover bg-center rounded-2xl">
+      <div class="min-h-screen flex flex-col text-center items-center justify-center ">
+        <h1 class="text-6xl text-white">End-to-End Travel with</h1>
+        <h2 class="text-6xl text-[#1DD100]">P Paribahan</h2>
+        <p class="text-white">Yes, you can run unit tests and view the results directly within the app <br> The
+          integrated testing features allow for a streamlined .</p>
+      </div>
 
-    
-</section>
+    </section>
+    <!-- image section end -->
 
+    <section class="max-w-6xl mx-auto mb-5">
+      <!--Best offer section -->
+      <div class="mb-5">
+        <h1 class="text-center text-black font-bold text-4xl">Best offers for you</h1>
+      </div>
+      <div class="flex gap-6">
+        <!-- Cupon-devider card 1 -->
+        <div class="w-full">
+          <div class=" flex bg-yellow-400  ">
+            <div class="ml-auto mt-8">
+              <h2 class="text-3xl font-bold"><span>15</span>% OFF</h2>
+              <h3 class="text-xl font-medium">on your next purchase</h3>
+              <p> use by January 2024</p>
+            </div>
+            <img class="ml-auto" src="images/cupon-devider.png" alt="">
+            <div>
+              <h1 class="text-3xl font-bold mt-16 mr-2">NEW <span>15</span></h1>
+              <h3>Coupon Code</h3>
+            </div>
+          </div>
+
+        </div>
+        <!-- info card 1 -->
+        <div class="w-full">
+          <div class="flex bg-[#F78C9C] ">
+            <div class="ml-auto mt-8">
+              <h2 class="text-3xl font-bold"><span>20</span>% OFF</h2>
+              <h3 class="text-xl font-medium">on your next purchase</h3>
+              <p> use by January 2024</p>
+            </div>
+            <img class="ml-auto" src="images/cupon-devider.png" alt="">
+            <div>
+              <h1 class="text-3xl font-bold mt-16 mr-2">Couple 20</h1>
+              <h3>Coupon Code</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="text-center mt-5 mb-4">
+        <button class="border border-solid border-green-500 rounded-2xl p-5 text-[#1DD100]">See All Offers</button>
+      </div>
+    </section>
   </main>
+
+  <footer>
+
+  </footer>
 </body>
 
 </html>
