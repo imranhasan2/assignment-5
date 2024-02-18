@@ -1,2 +1,36 @@
 .font-Raleway
 {font-family: "Raleway", sans-serif};
+
+
+
+
+
+/* <section class="bg-white">
+      <!--  GreenLine paribhan-->
+      <!-- <div class="w-full"> -->
+      <div>
+        <div class="flex justify-between">
+          <div class="flex gap-3">
+            <img class='max-w-12 max-h-11' src="images/bus-logo.png" alt="">
+            <div>
+              <h2 class="text-3xl font-bold">Greenline Paribahan
+              </h2>
+              <p>Coach-009-WEB ! AC_Business</p>
+            </div>
+            
+          </div>
+          <div>
+            <button class="btn">
+              <img src="images/seat-green-filled.png" alt="">
+              Button
+            </button>
+          </div>
+          <div>
+            <img src="images/info-devider.png" alt="">
+          </div>
+         <div>
+          <img class="w-12 h-11" src="images/fare.png" alt="">
+          <h1>550</h1>
+          <h1>Taka</h1>
+        </div>
+        </div> */
