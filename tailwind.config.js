@@ -8,7 +8,7 @@ module.exports = {
   };
 
 
-  // chatgpt
+  
 //   section class="bg-white p-8">
 //   <div class="flex justify-around">
 //     <div class="flex gap-10">

@@ -5,32 +5,221 @@
 
 
 
-/* <section class="bg-white">
-      <!--  GreenLine paribhan-->
-      <!-- <div class="w-full"> -->
-      <div>
-        <div class="flex justify-between">
-          <div class="flex gap-3">
-            <img class='max-w-12 max-h-11' src="images/bus-logo.png" alt="">
-            <div>
-              <h2 class="text-3xl font-bold">Greenline Paribahan
-              </h2>
-              <p>Coach-009-WEB ! AC_Business</p>
-            </div>
-            
-          </div>
-          <div>
-            <button class="btn">
-              <img src="images/seat-green-filled.png" alt="">
-              Button
-            </button>
-          </div>
-          <div>
-            <img src="images/info-devider.png" alt="">
-          </div>
-         <div>
-          <img class="w-12 h-11" src="images/fare.png" alt="">
-          <h1>550</h1>
-          <h1>Taka</h1>
+/* <div id="cart-container" class="cart">
+        <h1>Cart</h1>
+        <0 />
+        <ul id="selected-place-container" class="selected-place-container"></ul>
+        <hr />
+        <div class="calculation-area">
+          <h4>Total cost: <span id="total-cost">0</span> $</h4>
         </div>
-        </div> */
+        <div class="all-cat-btn">
+          <button onclick="grandTotalCost('bus')" class="category-btn">
+            Bus +100
+          </button>
+          <button onclick="grandTotalCost('train')" class="category-btn">
+            Train -200
+          </button>
+          <button onclick="grandTotalCost('flight')" class="category-btn">
+            Flight +500
+          </button>
+        </div>
+        <hr />
+        <h4>Grand Total : <span id="grand-total">0</span> $</h4>
+      </div> */
+
+
+      /* // const totalPrice = document.getElementById('total-price');
+      // const totalP = totalPrice.innerText;
+      // const total = parseInt(totalP);
+      // const fixedPrice = document.getElementById('ticket-price')
+      // const updatedTotal = fixedPrice + total;
+
+      // const totalPrice = document.getElementById('total-price');
+      // const totalP = totalPrice.innerText;
+      // const total = parseInt(totalP);
+      // const updatedTotal = total + fixedPrice;
+      // console.log(updatedTotal); */
+
+
+
+
+
+
+
+
+
+      /* const busSeat = document.getElementsByClassName('bus-seat');
+
+// let fixedPrice = 550;
+
+// for (const bus of busSeat) {
+//     bus.addEventListener('click', function () {
+//         bus.classList.add('bg-green-400');
+
+//         const addContainer = document.getElementById('add-container');
+//         const clonedBus = bus.cloneNode(true);
+//         clonedBus.classList.remove('bg-green-400')
+
+//         const createLi = document.createElement('li');
+//         createLi.appendChild(clonedBus);
+
+
+
+//         const d1 = document.createElement('div');
+//         d1.innerText = bus;
+//         const d2 = document.createElement('div');
+//         d2.innerText = ('economy');
+//         const d3 = document.createElement('div');
+//         d3.innerText = parseInt(document.getElementById('ticket-price').innerText);
+//         //  createLi.appendChild(d1);
+//         createLi.appendChild(d2);
+//         createLi.appendChild(d3);
+//         createLi.classList.add('flex', 'justify-between');
+//         addContainer.appendChild(createLi);
+//         console.log(createLi);
+
+     
+//         // const grandTotal =document.getElementById('grand-total');
+//         // const grandText =grandTotal.innerText;
+//         // const grand =parseInt(grandText);
+//         // const sum  = grand.innerText + 
+//         // console.log(sum);
+      
+
+
+//         const discount = 
+
+
+
+
+
+
+
+//         totalSeatLeft('total-seat');
+//         updatedSeat('seat-increase');
+//         totalPrice('total-price');
+//         grandTotal('grand-total');
+
+//     });
+// }
+
+// function totalSeatLeft(id) {
+//     const totalSeatElement = document.getElementById(id);
+//     const totalSeat = totalSeatElement.innerText;
+//     const convertedSeat = parseInt(totalSeat);
+//     const currentSeat = convertedSeat - 1;
+//     totalSeatElement.innerText = currentSeat;
+// }
+
+
+// function updatedSeat(id) {
+//     const seatIncrease = document.getElementById(id);
+//     const seatInc = seatIncrease.innerText;
+//     const updatedSeat = parseInt(seatInc);
+//     const currentSeat = updatedSeat + 1;
+//     seatIncrease.innerText = currentSeat;
+// }
+
+// function totalPrice(id) {
+//     const totalPrice = document.getElementById(id);
+//     const totalP = totalPrice.innerText;
+//     const total = parseInt(totalP);
+//     const updatedTotal = total + fixedPrice;
+//     totalPrice.innerText = updatedTotal;
+// }
+
+// function grandTotal(id){
+//     const grandTotal =document.getElementById(id);
+//     const grandText =grandTotal.innerText;
+//     const grand =parseInt(grandText);
+//     totalPrice(id).innerText = grand;
+// } */
+
+
+/* / const busSeat = document.getElementsByClassName('bus-seat');
+
+// let fixedPrice = 550;
+
+// for (const bus of busSeat) {
+//     bus.addEventListener('click', function () {
+//         bus.classList.add('bg-green-400');
+
+//         const addContainer = document.getElementById('add-container');
+//         const clonedBus = bus.cloneNode(true);
+//         clonedBus.classList.remove('bg-green-400')
+
+//         const createLi = document.createElement('li');
+//         createLi.appendChild(clonedBus);
+
+
+
+//         const d1 = document.createElement('div');
+//         d1.innerText = bus;
+//         const d2 = document.createElement('div');
+//         d2.innerText = ('economy');
+//         const d3 = document.createElement('div');
+//         d3.innerText = parseInt(document.getElementById('ticket-price').innerText);
+//         //  createLi.appendChild(d1);
+//         createLi.appendChild(d2);
+//         createLi.appendChild(d3);
+//         createLi.classList.add('flex', 'justify-between');
+//         addContainer.appendChild(createLi);
+//         console.log(createLi);
+
+     
+//         // const grandTotal =document.getElementById('grand-total');
+//         // const grandText =grandTotal.innerText;
+//         // const grand =parseInt(grandText);
+//         // const sum  = grand.innerText + 
+//         // console.log(sum);
+      
+
+
+//         const discount = 
+
+
+
+
+
+
+
+//         totalSeatLeft('total-seat');
+//         updatedSeat('seat-increase');
+//         totalPrice('total-price');
+//         grandTotal('grand-total');
+
+//     });
+// }
+
+// function totalSeatLeft(id) {
+//     const totalSeatElement = document.getElementById(id);
+//     const totalSeat = totalSeatElement.innerText;
+//     const convertedSeat = parseInt(totalSeat);
+//     const currentSeat = convertedSeat - 1;
+//     totalSeatElement.innerText = currentSeat;
+// }
+
+
+// function updatedSeat(id) {
+//     const seatIncrease = document.getElementById(id);
+//     const seatInc = seatIncrease.innerText;
+//     const updatedSeat = parseInt(seatInc);
+//     const currentSeat = updatedSeat + 1;
+//     seatIncrease.innerText = currentSeat;
+// }
+
+// function totalPrice(id) {
+//     const totalPrice = document.getElementById(id);
+//     const totalP = totalPrice.innerText;
+//     const total = parseInt(totalP);
+//     const updatedTotal = total + fixedPrice;
+//     totalPrice.innerText = updatedTotal;
+// }
+
+// function grandTotal(id){
+//     const grandTotal =document.getElementById(id);
+//     const grandText =grandTotal.innerText;
+//     const grand =parseInt(grandText);
+//     totalPrice(id).innerText = grand;
+// } */
